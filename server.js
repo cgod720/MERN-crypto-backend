@@ -6,10 +6,10 @@ const bodyParser = require('body-parser')
 const session =  require('express-session')
 const cors = require('cors');
 const rp = require('request-promise');
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 
 //Database
-const MONGODB_URI = process.env.port || 'mongodb://localhost/the_crypto_sphere'
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/the_crypto_sphere'
 const API_KEY = process.env.REACT_APP_COIN_API
 const NEWS_KEY = process.env.REACT_APP_NEWS_API
 

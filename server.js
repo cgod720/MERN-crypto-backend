@@ -52,7 +52,7 @@ app.get('/cmc', (req, res) => {
     uri: 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest',
     qs: {
       start: 1,
-      limit: 100,
+      limit: 1000,
       convert: 'USD'
     },
     headers: {
@@ -73,7 +73,7 @@ app.get('/cmc', (req, res) => {
 app.get('/news', (req, res) => {
   const requestNews = {
     method: 'GET',
-    uri: 'https://newsapi.org/v2/everything?' + 'q=cryptocurrency&' +
+    uri: 'https://newsapi.org/v2/everything?' + 'q=crypto&' +
             'sortBy=latest&' + 'apiKey=' + NEWS_KEY,
     json: true,
     gzip: true

@@ -73,7 +73,7 @@ app.get('/cmc', (req, res) => {
 app.get('/news', (req, res) => {
   const requestNews = {
     method: 'GET',
-    uri: 'https://newsapi.org/v2/everything?' + 'q=crypto&' +
+    uri: 'https://newsapi.org/v2/everything?' + 'q=cryptocurrency&' +
             'sortBy=latest&' + 'apiKey=' + NEWS_KEY,
     json: true,
     gzip: true
